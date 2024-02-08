@@ -4,10 +4,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 
-class TextSizeAdapter : BaseAdapter() {
+class TextSizeAdapter : BaseAdapter(_context: Context _size: Array<int>) {
+
+    private val context = _context
+    private val size = _size
 
     override fun getCount(): Int {
-        TODO("Not yet implemented")
+        return size.size
     }
 
     override fun getItem(position: Int): Any {
