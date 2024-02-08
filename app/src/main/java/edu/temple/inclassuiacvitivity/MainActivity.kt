@@ -18,6 +18,9 @@ class MainActivity : AppCompatActivity() {
 
         /* Step 1: Populate this array */
         val numberArray = Array(50){i -> (i + 1) * 2}
+        spinner.addapter = TextSizeAdapter(_context this@MainActivity,numberArray )
+
+
 
         with (spinner) {
             /* Step 2: Create adapter to display items from array in Spinner */
